@@ -1,0 +1,99 @@
+{% extends 'menu-superior.html' %}
+{% load static %}
+
+{% block content %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+    <title>Librería Yummi</title>
+    
+
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Nuestro css-->
+    <link rel="stylesheet" type="text/css" href="static/css/index.css" th:href="@{/css/index.css}">
+
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body onload="onLoad()">
+    
+    <div id="menu-superior">
+
+    </div>
+    <section id="nosotros">
+        <div class="container">
+            <img src="{% static 'img/banner.jpg' %}" style="width: 1100px;height: 240px;">
+        </div>
+    </section>
+    <section id="hero">
+        <div class="container">
+            <div class="hero-details">
+                <h1>
+                    Nosotros
+                </h1>
+                <p>
+                    I said, "we'd lose". You said, "We'll do that together too." And guess what, Cap? We lost. And you weren't there. But that's what we do, right? Our best work after the fact? We're the Avengers, we're the Avengers. Not the Prevengers.  I have no idea. We're talking about time travel here. Either it's all a joke, or none of it is.  Oh, there she is. That's Jane... She's... an old flame of mine... She... she stuck her hand inside a rock this one time... and then the Aether stuck itself inside her... And, she became very, very sick. So I had to take her to Asgard, which is where I'm from. And we had to try and fix her. We were dating at the time, you see. I got to introduce her to my Mother... who's dead,  You could not live with your own failure. And where did that bring you? Back to me. I thought by eliminating half of life, the other half would thrive. But you’ve shown me that’s impossible. And as long as there are those that remember what was, there will always be those that are unable to accept what can be. They will resist. 
+                </p>
+                <p>
+                   
+                </p>
+                <h1>
+                    Visión
+                </h1>
+                <p>
+                    When Thanos snapped his fingers, Earth became ground zero for a power surge of ridiculously cosmic proportions. No one's ever seen anything like it... Until two days ago. I thought my dad was tough on me. And now, looking back, I just remember the good stuff, you know. He did drop the odd pearl.  You could not live with your own failure. And where did that bring you? Back to me. I thought by eliminating half of life, the other half would thrive. But you’ve shown me that’s impossible. And as long as there are those that remember what was, there will always be those that are unable to accept what can be. They will resist. 
+                </p>
+                <h1>
+                    Misión
+                </h1>
+                <p>
+                    Okay, so the "how" works. Now we gotta figure out the when and the where. Almost all of us has had an encounter with at least one of the six Infinity Stones.  We just, wait around for this Quill guy to show up, and then he leads us to the Power Stone, is that it?  Oh, he's gonna answer to us. Odin can have what's left. And I'm gonna need that case, that's been SHIELD property for over 70 years. Now, this may benefit your reality, but my new one…not so much. In this new branched Reality, without our chief weapon against the forces of darkness, our world will be overrun. Millions will suffer. So, tell me, Doctor, can your science prevent all that?   I got it. There's another way. To retake the Tesseract and acquire new particles. We'll stroll down memory lane. Military installation, Garden State.  No amount of money ever bought a second of time. Look...It's not just the fact that that glove is channeling enough energy to light up a continent, I'm telling you, you're in no condition.  You could not live with your own failure. And where did that bring you? Back to me. I thought by eliminating half of life, the other half would thrive. But you’ve shown me that’s impossible. And as long as there are those that remember what was, there will always be those that are unable to accept what can be. They will resist. 
+                </p>
+                <h1>
+                    Contáctanos
+                </h1>
+                <p>
+                    Telefono : +569 1111 1111
+                </p>
+                <p>
+                    Correo: contacto.libreria@gmail.com
+                </p>
+
+            </div>
+        </div>
+    </section>
+    <script>
+        $(function(){
+            $("#menu-superior").load("menu-superior.html");
+        });
+    </script>
+</body>
+
+{% endblock %}
